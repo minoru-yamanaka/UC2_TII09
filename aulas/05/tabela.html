@@ -156,7 +156,7 @@
                 <th>Preço Unitário</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="background-color: turquoise;">
             <tr>
                 <td> Caneta </td>
                 <td> 10 </td>
@@ -168,7 +168,7 @@
                 <td> R$ 15,00 </td>
             </tr>
         </tbody>
-        <tfoot>
+        <tfoot style=" color: red">
             <tr>
                 <th colspan="2">Total:</th>
                 <th>R$ 95,00</th>
@@ -176,12 +176,49 @@
         </tfoot>
     </table>
 
+    <h3>Explicação</h3>
 
+    <ul>
+        <li><b>thead:</b> Define o cabeçalho da tabela</li>
+        <li><b>tbody:</b> Define o corpo da tabela, onde ficam os dados</li>
+        <li><b>tfoot:</b> Define o rodapé da tabela, ideal para somatórios ou resumos</li>
+    </ul>
 
+    <h2>Tabela aninhada</h2>
 
+    <p>
+        É possível colocar uma tabela dentro de outra célula da tabela.
+        Isso é conhecido como aninhamento de tabela. 
+    </p>
 
+    <h3>Exemplo de Tabela Aninhada:</h3>
 
-
+    <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Detalhes</th>
+        </tr>
+        <tr>
+            <td>NoteBruke kk</td>
+            <td>
+                <!-- Tabela aninhada -->
+                <table border="1">
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Preço</th>
+                    </tr>      
+                    <tr>          
+                        <td>Apple M1</td>
+                        <td>R$ 7.000,00</td>    
+                    </tr>         
+                    <tr>
+                        <td>Lenovo Ideapad</td>
+                        <td>R$ 3.500,00</td>
+                    </tr> 
+                </table>
+            </td>
+        </tr>
+    </table>
 
 
 

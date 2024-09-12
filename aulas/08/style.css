@@ -1,51 +1,65 @@
-/* Estilos para header e navegação */
-header {
-    background-color: #333;
-    color: white;
-    padding: 5px 20px 5px 20px;
-    text-align: center;
-}
+    header {
+        background-color: #333;
+        color: white;
+        padding: 5px 20px 5px 20px;
+        text-align: center;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
+    nav{
+        background-color: #333;
+        margin: 0px;
+        padding:15px;
+    }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;   
-}
+    nav h1{
+        text-align: center;
+        color: white;
+    }
 
-/* Estilos para o conteúdo principal */
-main {
-    margin: 15px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
 
-section {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
+    nav ul li a{
+        display: inline;
+        margin-right: 10px;   
+        color: white;
+        text-decoration: none;
+    }
 
-/* Estilos para o conteúdo complementar (aside) */
-aside {
-    background-color: #e9ecef;
-    padding: 15px;
-    border-left: 5px solid #444;
-}
+    nav ul li {
+        display: inline;
+        margin-right: 10px;   
+        color: white;
+    }
 
-/* Estilos para o rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    main {
+        margin: 15px;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
 
+    section {
+        background-color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    aside {
+        background-color: #e9ecef;
+        padding: 15px;
+        border-left: 5px solid #444;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }

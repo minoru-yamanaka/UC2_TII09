@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css"> 
     <title>Usando Imagens</title>
 </head>
 <body>
@@ -21,10 +21,10 @@
     <!-- Conteúdo Principal -->
     <main>
         <section>
-            <h2>Introdução à Tag &ltimg&gt </h2>
+            <h2>Introdução à Tag &lt img &gt </h2>
 
             <p>
-                A tag img em HTML é usada para incorporar imagens em uma
+                A tag &lt img &gt em HTML é usada para incorporar imagens em uma
                 página web. Ela é um elemento vazio, ou seja, não possui uma tag
                 de fechamento e contém apenas atributos que definem o conteúdo vi
                 de fechamento e contém apenas atributos que definem o conteúdo visual.x
@@ -33,25 +33,69 @@
             <h3>Atributos principais:</h3>
 
             <ul>
-                <li>src (source): define o caminho da imagem que será exibida pode ser uma url externa ou um caminho dentro do servidor </li>
+                <li>src <em>(source)</em>: define o caminho da imagem que será exibida pode ser uma url externa ou um caminho dentro do servidor </li>
             
                 <div class="card">
                     <h4>Exemplo 1:</h4>
-                    <pre><code> código vai aqui </code></pre>
+                    <pre><code>&ltimg src="../09/flor.jfif" alt="Meme"&gt</code></pre>
                     <p>Resultado:</p>
-                    <img src="../09/image.png" alt="Senac" style="width: 100%;">
+                    <img src="../09/ines.jfif" alt="Brasil" style="width: 100%;">
                     <img src="../09/flor.jfif" alt="Meme da flor de lis" style="width: 100%;">
-                    <img src="../09/ines.jfif" alt="Meme da ines Brasil" style="width: 100%;">
+                    
                 </div>
 
+                <li>
+                    <em>alt (alternative text)</em>: fornece um texto alternativo para ser exibido caso a imagem
+                    não possa ser carregada. Ele também melhora a acessibilidade para leitores de tela.
+                
+                    <div class="card">
+                        <h4>Exemplo 2</h4>
+                        <pre><code> &lt img src="../09/ines.jfif" alt="Meme"; &gt </code></pre>
+                    
+                        <p>Resultado:</p>
+                        <img src="../09/naza.gif"Nazaré" style="width: 100%;" >
+                    </div>
+                </li>
+
+                <li>
+                    <em>src</em> também pode ser de um link externo:
+
+                    <div class="card"> 
+                        <h4>Exemplo 3:</h4>
+                            <pre><code> &lt img src="https://http.cat/images/103.jpg" &gt </code></pre>
+                            <p>Resultado:</p>
+                            <img src="https://http.cat/images/103.jpg"  alt="" style="width: 100%;">
+                    
+                        </div>
+                    
+                </li>
+
             </ul>
-
-
-
-
-
-
+           
         </section>
+    
+        <aside>
+            <h3>Tipos Comuns de Imagens</h3>
+            <p>Os formatos de imagns mais utilizados na web são:</p>
+            <ul>
+                <li>
+                    <strong>(.jpg ou .jpeg):</strong>
+                    Formato utilizado amplamente para fotografias e imagens com muitos
+                    detalhes e cores. Possui compressão com perda de qualidade (lossy).
+                </li>
+                <li>
+                    <strong>(.png):</strong>
+                    Usado para imagens com fundo transparente ou que necessitam de alta qualidade,
+                    sem perda de detalhes. Utiliza compressão sem perda (lossless).
+                </li>
+                <li>
+                    <strong>GIF (.gif):</strong>
+                    Formato ideal para imagens animadas e pequenos ícones. Suporta transparência,
+                    mas tem um número limitdo de cores.
+                </li>
+            </ul>
+        </aside>
+    
     </main>
     <!-- Conteúdo Complementar -->
 </body>

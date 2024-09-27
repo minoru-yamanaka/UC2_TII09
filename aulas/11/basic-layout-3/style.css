@@ -19,7 +19,6 @@ nav {
 .Nav_Home {
     justify-content: flex-start;
     margin-right: 0px;
-    background-color: black;
 }
 
 .Nav_2 {
@@ -28,7 +27,11 @@ nav {
     display: flex; 
     /* espaçamento e igualdade entre as extremidades */
     justify-content: space-between;
-    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .Nav_2, a {
@@ -56,7 +59,7 @@ aside {
     /* width: 25%; *//*<- volta a ser column default */
 }
 
-div {
+.div_irrelevante {
     background-color: rgb(120, 120, 120);
     /* width: 25%; *//*<- volta a ser column default */
 }

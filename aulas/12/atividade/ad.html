@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {            
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            height: 100%;
+        }
+
+        .content {
+            min-height: calc(100vh - 200px);
+            background-color: lightblue;
+        }
+
+        header {
+            height: 100px;
+            background-color: darkgray;
+        }
+
+        footer {
+            height: 100px;
+            background-color: darkgray;
+            text-align: center;
+            padding: 20px;
+        }        
+
+        .elemento {
+        height: 40px; /* Define a altura do elemento como 40 pixels */
+        width: 200px; /* Define a largura do elemento como 200 pixels */
+        background-color: yellow; /* Define a cor de fundo como amarelo */
+        border: 1px solid black; /* Adiciona uma borda sólida de 1 pixel de largura e cor preta ao redor do elemento */
+        position: fixed; /* Posiciona o elemento de forma fixa em relação à janela do navegador */
+        bottom: 15px; /* Define a distância de 15 pixels do fundo da janela */
+        right: 15px; /* Define a distância de 15 pixels da direita da janela */
+
+        display: flex; /* Define o elemento como um contêiner flexível */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="elemento">
+        <p>Promoção! Aproveite!</p>
+    </div>
+    <header>
+        <h1>Cabeçalho da Página</h1>
+    </header>
+    <!-- <div class="floating-ad">
+        <p>Promoção! Aproveite!</p>
+    </div> -->
+    <div class="content">
+        <p>Conteúdo da página</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>    
+</body>
+
+</html>

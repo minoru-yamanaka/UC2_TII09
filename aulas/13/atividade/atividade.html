@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.2fr 1.8fr 1.5fr 0.5fr  ;
+            grid-template-areas: 
+                "nav      nav       nav         nav"
+                "section0 main      main        main"
+                "section0 section1  section2    section2"
+                "section0 footer    footer      footer"
+            ;
+            gap: 5px;
+            height: 100vh;
+        }
+
+        .grid-container>* {
+            padding-top: 10px;
+        }
+
+        .default {
+            color: white;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #6464c8;
+        }
+
+        main {
+            grid-area: main;
+            background: #5a5ab4;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #5a5ab4;
+        }
+        
+        .section0 {
+            grid-area: section0;
+            background: #5050a0;
+        }
+        .section1 {
+            grid-area: section1;
+            background: #46468c;
+        }
+        .section2 {
+            grid-area: section2;
+            background: #3c3c78;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #5a5ab4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">     
+        <nav class="default"><b>NavBar</b></nav>
+        <section class="default section0"><b>Sidebar</b></section>
+        <main class="default"><b>Main</b></main>
+        <section class="default section1"><b>Section 1</b></section>
+        <section class="default section2"><b>Section 2</b></section>
+        <footer class="default"><b>Footer</b></footer>      
+    </div>
+</body>
+</html>
